@@ -148,6 +148,11 @@ a {
 
 }
 
+.btn:hover {
+    color: #ffffff;
+    background: #2f83cd;
+}
+
 .header-btn {
     display: flex;
     align-items: center;
@@ -229,27 +234,15 @@ a {
 
 }
 
-/* .dropdown::after {
-    content: '';
-    width: 5px;
-    height: 5px;
-    border-top: 3px solid #6E18C0;
-    border-right: 3px solid #6E18C0;
-    margin-right: 60px;
-    transform: rotate(45deg);
-} */
 
-/* .dropdown .curent-page {
-    font-family: Manrope;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.43;
-    letter-spacing: normal;
-    text-align: left;
-    color: #969696;
-} */
+.curent-page {
+    background: #2f83cd;
+
+}
+
+.num-page {
+    color: #ffffff;
+}
 
 .history {
     display: flex;
@@ -459,7 +452,7 @@ a {
 
 
 .curr__number {
-    border: 1px solid #2f83ce;
+    border: 1px solid #d0deec;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -467,20 +460,32 @@ a {
     align-items: center;
     justify-content: center;
     margin: 16px 11px 0px 0px;
+    cursor: pointer;
+}
+
+.curr__number:hover {
+    border: 1px solid #2f83ce;
+
+}
+
+.curr__number>span:hover {
+    color: #2f83cd;
+
 }
 
 
 
 .number_rad {
-    color: #323232;
+    display: block;
     font-weight: 400;
-
 }
 
+
+
 .footer__content {
-    background: url(/img/фон.png) 0 0/100% auto no-repeat;
-    height: 840px;
+    background: url(../img/фон.png) 0 0/auto no-repeat;
     margin-top: 70px;
+    height: 100%;
 
 
 }
@@ -558,7 +563,6 @@ address {
     max-width: 445px;
     border: 10px solid #79d2fb;
     background-color: #ffffff;
-    margin-top: 32px;
 
 }
 
@@ -578,26 +582,59 @@ address {
 .form__input {
     display: flex;
     flex-direction: column;
-    padding: 5px 46px;
+    padding: 12px 46px;
 }
 
 input {
     background: #f0f0f0;
     box-shadow: inset 0px 2px 0 0 rgba(0, 0, 0, 0.12);
     border: none;
-    padding: 15px 0 15px 18px;
-    margin-bottom: 10px;
+    padding: 11px 0 15px 15px;
+    margin-bottom: 7px;
+    font-family: Manrope;
+    font-size: 14px;
 
+
+}
+
+input::placeholder {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #969696;
+}
+
+input:focus {
+    border: none
 }
 
 textarea {
     background: #f0f0f0;
     box-shadow: inset 0px 2px 0 0 rgba(0, 0, 0, 0.12);
     border: none;
+    font-family: Manrope;
+    font-size: 14px;
+    padding: 13px 0 0px 16px;
+
+    font-family: Manrope;
+    font-size: 14px;
 }
 
 textarea::placeholder {
-    padding: 15px 0 15px 18px;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #969696;
 }
 
 .form__submit {
@@ -627,9 +664,93 @@ textarea::placeholder {
     text-align: center;
     color: #969696;
     padding: 0 38px;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
+
 }
 
 .persomal {
     color: #323232;
+    border-bottom: 1px solid #d2d2d2
+}
+
+.footer__main {
+    display: flex;
+    padding-top: 33px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.footer-sub-links {
+    background: #2c5d85;
+    margin: 0;
+}
+
+.block-name {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: left;
+    color: #81e1fd;
+    margin-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 1px;
+}
+
+.links {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.93;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.footer__nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-column-gap: 31px;
+}
+
+.footer__sub {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.93;
+    letter-spacing: normal;
+    text-align: left;
+    color: #81e1fd;
+    border-bottom: 1px solid #43769f
+}
+
+.advertising {
+    border-top: 1px solid#214f74;
+    margin-top: 45px;
+
+}
+
+.advertising-bar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 27px;
+
+
+
+}
+
+.list {
+    margin-right: 72px;
 }

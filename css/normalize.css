@@ -171,8 +171,7 @@ img {
 
 button,
 optgroup,
-select,
-textarea {
+select {
   font-family: inherit;
   /* 1 */
   font-size: 100%;
