@@ -553,3 +553,83 @@ address {
 .comment {
     resize: none;
 }
+
+.block__form {
+    max-width: 445px;
+    border: 10px solid #79d2fb;
+    background-color: #ffffff;
+    margin-top: 32px;
+
+}
+
+.question-form {
+    font-family: Manrope;
+    font-size: 21px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: center;
+    color: #323232;
+    padding: 18px 89px;
+}
+
+.form__input {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 46px;
+}
+
+input {
+    background: #f0f0f0;
+    box-shadow: inset 0px 2px 0 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    padding: 15px 0 15px 18px;
+    margin-bottom: 10px;
+
+}
+
+textarea {
+    background: #f0f0f0;
+    box-shadow: inset 0px 2px 0 0 rgba(0, 0, 0, 0.12);
+    border: none;
+}
+
+textarea::placeholder {
+    padding: 15px 0 15px 18px;
+}
+
+.form__submit {
+    border-radius: 24.5px;
+    box-shadow: 0px 6px 12px 0 rgba(47, 131, 205, 0.35);
+    background-color: #2f83cd;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    margin-top: 18px;
+    padding-right: 16px;
+    cursor: pointer;
+}
+
+.consent {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    color: #969696;
+    padding: 0 38px;
+    margin-bottom: 16px;
+}
+
+.persomal {
+    color: #323232;
+}

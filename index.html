@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./style/normalize.css" />
-    <link rel="stylesheet" href="./style/bootstrap-grid.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600&display=swap" rel="stylesheet">
@@ -412,13 +412,16 @@
                 <div class="block__form">
                     <div class="question-form">Задайте вопрос нашим менеджерам
                     </div>
-                    <form action="#">
-                        <input type="text">
-                        <input type="tel">
-                        <input type="mail">
-                        <textarea class="comment" name="" id="" cols="30" rows="10"></textarea>
-
+                    <form action="#" class="form__input">
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <input type="tel" placeholder="Ваш телефон">
+                        <input type="mail" placeholder="Ваш e-mail">
+                        <textarea class="comment" name="" id="" cols="30" rows="4" placeholder="Ваш вопрос"></textarea>
+                        <input type="submit " value="Задать вопрос" class="form__submit">
                     </form>
+                    <div class="consent">Нажимая на кнопку, вы даете согласие на обработку своих <a href="#"
+                            class="persomal">персональных данных</a>
+                    </div>
                 </div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2277.977955221358!2d61.38706561604334!3d55.18365544320955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c5ed28d785b487%3A0xcb016a4e140a12bc!2z0L_RgNC-0YHQvy4g0J_QvtCx0LXQtNGLLCAxNzcsINCn0LXQu9GP0LHQuNC90YHQuiwg0KfQtdC70Y_QsdC40L3RgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDQ1NDA4NA!5e0!3m2!1sru!2sua!4v1626733681756!5m2!1sru!2sua"
