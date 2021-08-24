@@ -59,3 +59,68 @@
         max-height: 270px;
     }
 }
+
+@media (max-width: 1110px) {
+    .map {
+        display: none;
+    }
+
+    .footer__main {
+        justify-content: center;
+    }
+
+    .footer__phone {
+        font-size: 16px;
+    }
+
+    .footer__mail {
+        font-size: 14px;
+    }
+
+    address {
+        font-size: 14px;
+
+    }
+
+    .icon {
+        width: 40px;
+
+    }
+}
+
+@media(max-width:768px) {
+
+    .header-main,
+    .header-contacts {
+        display: none;
+    }
+
+    .header-content {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .header__main-menu {
+        display: none;
+    }
+
+    .hamburger span {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        display: block;
+        padding-right: 10px;
+
+    }
+
+    .header-btn {
+        padding-left: 10px;
+    }
+
+    .header-content {
+        align-items: center;
+        min-height: auto;
+    }
+}

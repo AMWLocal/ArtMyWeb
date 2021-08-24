@@ -734,3 +734,23 @@ textarea::placeholder {
 .list {
     margin-right: 72px;
 }
+
+.hamburger {
+    display: none;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.hamburger span {
+    display: none;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    background: #2f83cd;
+    border-radius: 3px;
+    z-index: 1;
+
+}
